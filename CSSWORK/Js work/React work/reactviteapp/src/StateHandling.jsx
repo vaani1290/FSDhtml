@@ -3,8 +3,13 @@ import React, { useState } from 'react'
 function StateHandling() {
     const[count,setcount]=useState(20);
     function doIncrement(){
+      //alert("hello");
         setcount(count+20)
     }
+    function doDecrement(){
+      //alert("hello");
+      setcount(count-20)
+  }
   return (
     <div>
     <div>StateHandling 
@@ -12,6 +17,7 @@ function StateHandling() {
     </div>
     <div>
         <button onClick={doIncrement}>Increment</button>
+        <button onClick={doDecrement}>Decrement</button>
     </div>
     </div>
   )
